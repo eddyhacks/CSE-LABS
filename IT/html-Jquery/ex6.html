@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The jQuery World
+    </title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $('#btnSumit').click(function(){
+            var result =$('input[type="radio"]:checked');
+            if(result.length>0){
+                $$('#divResult').html(result.val()+"is checked");
+            }
+            else{
+                $('#divResult').html("No radio button checked");
+            }
+           });
+    });
+    </script>
+</head>
+
+<body style="font-family:Arial">
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input id="'btnSumit" type="submit" value="submit" />
+    <div id="divResult"></div>
+    
+    </div>
+</body>
+</html> 

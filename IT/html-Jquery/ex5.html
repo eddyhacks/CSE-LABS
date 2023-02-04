@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The jQuery World
+    </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+           $('div').hover(
+            function(){
+            $(this).css({"background-color":"red"});
+        },
+        function(){
+            $(this).css({"background-color":"blue"});
+        }
+        );
+    });
+    </script>
+</head>
+
+<body>
+    <div>
+        <p class="myclass">This a paragraph</p>
+        <p id="myid">This is a second paragraph</p>
+        <p>This is a third paragraph</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The jQuery World
+    </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $('#button').click(function(){
+                $(this).val("Stop that");
+            });// end click
+        });
+    </script>
+</head>
+
+<body>
+    <div id="mydiv">click to see dialogue box
+        <input type = "button" id="button">
+    </div>
+</body>
+</html>

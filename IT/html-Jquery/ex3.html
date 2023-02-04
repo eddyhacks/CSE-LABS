@@ -1,0 +1,58 @@
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The jQuery World
+    </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            var title = $("p").attr("title");
+            $("#divid").text(title);
+            $("#myimg").attr("src", "/jquery/images/jquery/.jpg");
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <p title="Bold and Brave">This is first paragraph</p>
+        <p id="myid">This is second paragraph</p>
+        <div id="divid"></div>
+        <img id="myimg" alt="Sample image" />
+    </div>
+</body>
+
+</html>
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The jQuery World
+    </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("div").click(function(){
+                $(this).replaceWith("<h1>JQuery is great")
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <p title="Bold and Brave">This is first paragraph</p>
+        <p id="myid">This is second paragraph</p>
+        <div id="divid"></div>
+        <img id="myimg" alt="Sample image" />
+    </div>
+</body>
+
+</html>
+
